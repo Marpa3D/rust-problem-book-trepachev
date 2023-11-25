@@ -36,9 +36,10 @@ fn main(){
     // Получите последнюю букву слова. Если слово заканчивается на мягкий знак,
     // то получите предпоследнюю букву.
     let word = "День";
-    let ch = word.chars().last();
+    //let ch = word.chars().last();
     if word.contains('ь') {
-        println!("{:?}", ch);
+        let res = &word[0..word.len()-2];
+        println!("{:?}", res.chars().last());
     }
 
     // № 6
